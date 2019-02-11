@@ -15,12 +15,10 @@ if input == "1 player"
     if type == "computer"
       a = Game.new(Players::Computer.new("X"), Players::Human.new("O"))
         a.play
-        if  type == "human"
+      else
           a = Game.new(Players::Human.new("X"), Players::Computer.new("O"))
           a.play
-        else
-          puts "error"
-        end
+        
       end
     end
 if input == "2 player"
